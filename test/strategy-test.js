@@ -35,7 +35,8 @@ vows.describe('uberStrategy').addBatch({
             "last_name": "Developer",\
             "email": "developer@uber.com",\
             "picture": "https://picture", \
-            "promo_code": "teypo" \
+            "promo_code": "teypo", \
+            "uuid": "123" \
           }';
 
         callback(null, body, undefined);
@@ -61,7 +62,7 @@ vows.describe('uberStrategy').addBatch({
       },
       'should load profile' : function(err, profile) {
         assert.equal(profile.provider, 'uber');
-        assert.equal(profile.id, 'developer@uber.com');
+        assert.equal(profile.id, '123');
         assert.equal(profile.displayName, 'Uber Developer');
       },
       'should set raw property' : function(err, profile) {
