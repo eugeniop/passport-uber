@@ -1,0 +1,47 @@
+{
+  "name": "passport-uber",
+  "version": "0.1.0",
+  "description": "uber authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "uber",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eugeniop/passport-uber.git"
+  },
+  "bugs": {
+    "url": "http://github.com/eugeniop/passport-uber/issues"
+  },
+  "author": {
+    "name": "Eugenio Pace",
+    "email": "eugeniop@auth0.com",
+    "url": "http://www.auth0.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib/passport-uber",
+  "dependencies": {
+    "pkginfo": "0.2.x",
+    "passport-oauth": "~0.1.2"
+  },
+  "devDependencies": {
+    "vows": "0.6.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "readmeFilename": "README.md",
+  "_id": "passport-uber@0.1.0"
+}
